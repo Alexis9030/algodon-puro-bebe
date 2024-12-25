@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Detalle del Producto</h1>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
+    </header>    
+
+    <main>
+        <div id="producto-detalle" class="producto-detalle-container">
+            <h2 id="producto-nombre">Cargando...</h2>
+            <img id="producto-imagen" src="" alt="Imagen del producto" class="producto-detalle-imagen">
+            <p id="producto-descripcion">Cargando descripción...</p>
+            <p><strong>Precio:</strong> $<span id="producto-precio">0</span></p>
+            <button onclick="agregarAlCarritoDesdeDetalle()" class="btn-comprar">Agregar al carrito</button>
+            <div class="btn-volver-container">
+                <a href="index.html" class="btn-volver">Volver a la tienda</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Algodón Puro Bebé. Todos los derechos reservados.</p>
+    </footer>
+    <script src="producto.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algodón Puro Bebé</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/fondo1.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Algodón Puro Bebé</h1>
+        <p>Ropa 100% de algodón, suave y natural para los más pequeños.</p>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="text-carousel">
+        <div class="carousel-text">
+            <p>🚚 ENVÍOS GRATIS EN COMPRAS MAYORES A $110.000</p>
+            <p>💳 3 CUOTAS SIN INTERÉS CON DÉBITO O CRÉDITO | 6 CUOTAS SIN INTERÉS EN COMPRAS MAYORES A $120.000</p>
+            <p>💰 10% OFF POR TRANSFERENCIA</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="dropdown">
+                <a href="#productos">Productos</a>
+                <ul class="submenu">
+                    <li><a href="body.html">Body</a></li>
+                    <li><a href="enteritos.html">Enteritos</a></li>
+                    <li><a href="mantas.html">Mantas</a></li>
+                    <li><a href="set-3-piezas.html">Set 3 piezas</a></li>
+                </ul>
+            </li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="resenas.html">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div class="productos-lista">
+                <div class="product-card">
+                    <img src="imagenes/short1.jpg" alt="Body + Short de Algodón">
+                    <h4>Body + Short</h4>
+                    <p>Talles 00 y 0, desde recién nacido hasta los 6 meses.</p>
+                    <p class="price">$5.500</p>
+                    <a href="producto.html?id=id1" class="buy-button">Ver Producto</a>
+                </div>                
+                <div class="product-card">
+                    <img src="imagenes/ranita1.jpg" alt="Ranitas de Algodón">
+                    <h4>Ranitas</h4>
+                    <p>Talles 00 al 2, desde recién nacido hasta el año y medio.</p>
+                    <p class="price">$5.200</p>
+                    <a href="producto.html?id=id2" class="buy-button">Ver Producto</a>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/set1.jpg" alt="Ajuares de Algodón">
+                    <h4>Ajuares</h4>
+                    <p>Talles 00, 0 y 1, ideales para el primer mes del bebé.</p>
+                    <p class="price">$7.500</p>
+                    <a href="producto.html?id=id3" class="buy-button">Ver Producto</a>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/manta1.jpg" alt="Mantas de Algodón">
+                    <h4>Mantas</h4>
+                    <p>Mantas suaves y abrigadas, perfectas para cualquier temporada.</p>
+                    <p class="price">$15.800</p>
+                    <a href="producto.html?id=id4" class="buy-button">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Oferta de la Semana</h2>
+            <div class="ofertas-lista"  >
+                <div class="offer-card">
+                    <img src="imagenes/babita1.jpg" alt="Babitas estampadas">
+                    <h4>Babitas Estampadas</h4>
+                    <p>Doble algodón, terminación borde con picot. Ideal para acompañar al bebé en cada momento.</p>
+                    <p><strong>Antes: $1200 | Ahora: $1000</strong></p>
+                    <a href="producto.html?id=id5" class="buy-now-button">Ver Producto</a>
+                    <div class="discount-tag">10% de Descuento</div>
+                </div>
+            </div>
+        
+        </section>
+
+        <div class="reseñas">
+            <h2>Reseñas Destacadas</h2>
+            <div class="reseñas-container">
+                <div class="reseña-card">
+                    <p>"Calidad excelente y muy suaves. Mi bebé los ama." - Luciana P.</p>
+                </div>
+                <div class="reseña-card">
+                    <p>"Los productos son hermosos y la tela es muy suave." - Juana G.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section style="background-color: #E0E0E0; padding: 40px 0;">
+        <div style="text-align: center; padding: 20px;">
+            <h3>¡Únete a la familia de Algodón Puro Bebé!</h3>
+            <p>Queremos saber de ti. Regístrate para recibir noticias, novedades y promociones exclusivas.</p>
+            <form id="registro-form" style="display: flex; flex-direction: column; align-items: center;">
+                <input id="nombre" type="text" placeholder="Nombre" style="padding: 10px; width: 250px; margin: 10px;" required />
+                <input id="email" type="email" placeholder="Correo Electrónico" style="padding: 10px; width: 250px; margin: 10px;" required />
+                <textarea id="mensaje" placeholder="Mensaje" style="padding: 10px; width: 250px; margin: 10px;" required></textarea>
+                <button type="submit" style="padding: 8px 16px; background-color: #B58B8B; color: white; border-radius: 5px; cursor: pointer;">Enviar</button>
+            </form>
+            <p id="mensaje-confirmacion" style="margin-top: 20px; color: green; display: none;">¡Gracias por registrarte! Nos pondremos en contacto a la brevedad.</p>
+        </div>
+    </section>
+    
+
+    <footer id="contacto" style="background-color: #F0F0F0; padding: 40px 0; color: #333; font-family: 'Comic Sans MS', cursive, sans-serif;">
+        <div style="text-align: center;">
+            <h2 style="color: #333;">Contacto</h2>
+            <p style="margin-bottom: 15px;">Para cualquier consulta o pedido especial, contáctanos:</p>
+            <div>
+                <p><strong>Teléfono:</strong> +54 11 5678 1234 (horario laboral)</p>
+                <p><strong>Email:</strong> info@algodonpurobebe.com</p>
+                <p><strong>Dirección:</strong> Calle S/N 123, Buenos Aires, Argentina (solo venta online)</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <p><strong>Seguinos en redes sociales:</strong></p>
+                <a href="#" style="color: #B58B8B; text-decoration: none; margin-right: 10px;">Instagram</a> |
+                <a href="#" style="color: #B58B8B; text-decoration: none;">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="producto.js"></script>
+
+</body>
+
+<section id="productos-api">
+    <h2>Ofertas Especiales</h2>
+    <div id="api-products" class="productos-lista"></div>
+</section>
+
+
+<script>
+    async function obtenerDatosProductos() {
+        const url = "https://fakestoreapi.com/products?limit=4";
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            console.log("Datos de productos desde la API:", data);
+
+            const contenedor = document.getElementById("productos-ejemplo");
+
+            data.forEach(producto => {
+                const productoHTML = `
+                    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; max-width: 200px; text-align: center;">
+                        <img src="${producto.image}" alt="${producto.title}" style="width: 100px; height: 100px; object-fit: contain;">
+                        <h3 style="font-size: 16px;">${producto.title}</h3>
+                        <p><strong>Precio:</strong> $${producto.price}</p>
+                        <p style="font-size: 14px;">${producto.description.substring(0, 50)}...</p>
+                    </div>
+                `;
+                contenedor.innerHTML += productoHTML;
+            });
+        } catch (error) {
+            console.error("Error al obtener datos de productos:", error);
+            const contenedor = document.getElementById("productos-ejemplo");
+            contenedor.innerHTML = "<p>Hubo un error al cargar los productos. Intenta nuevamente más tarde.</p>";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", obtenerDatosProductos);
+</script>
+
+</html>

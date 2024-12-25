@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body - Algodón Puro Bebé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
+        <h1>Body</h1>
+        <p>Encuentra los mejores bodys de algodón para tu bebé. Cómodos, suaves y perfectos para cada día.</p>
+    </header>
+
+    <main>
+        <section class="productos-destacados">
+            <!-- Detalles de cada producto -->
+            <div class="producto">
+                <img src="imagenes/body1.jpg" alt="Body x 2">
+                <h3>Body x 2</h3>
+                <p>Body de algodón suave, ideal para la piel sensible del bebé. Perfecto para usar en cualquier época del año.</p>
+                <p class="price">Precio: $8500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Body x 2', 8500, 'imagenes/body1.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/body2.jpg" alt="Body x 6">
+                <h3>Body x 6</h3>
+                <p>Body de algodón suave, ideal para la piel sensible del bebé. Perfecto para usar en cualquier época del año.</p>
+                <p class="price">Precio: $25500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Body x 6', 25500, 'imagenes/body2.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/body3.jpg" alt="Body Discontinuo x 6">
+                <h3>Body Discontinuo x 6</h3>
+                <p>Body de algodón suave, ideal para la piel sensible del bebé. Perfecto para usar en cualquier época del año.</p>
+                <p class="price">Precio: $23500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Body Discontinuo x 6', 23500, 'imagenes/body3.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/body4.jpg" alt="Body Floreado">
+                <h3>Body Floreado</h3>
+                <p>Body de algodón suave, ideal para la piel sensible del bebé. Perfecto para usar en cualquier época del año.</p>
+                <p class="price">Precio: $4500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Body Floreado', 4500, 'imagenes/body4.jpg')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <div class="btn-volver-container">
+            <a href="index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enteritos - Algodón Puro Bebé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
+        <h1>Enteritos</h1>
+        <p>Enteritos cálidos y suaves para el confort y estilo de tu bebé, hechos con materiales de alta calidad.</p>
+    </header>
+
+    <main>
+        <section class="productos-destacados">
+            <div class="producto">
+                <img src="imagenes/enterito1.jpg" alt="Enterito Nena">
+                <h3>Enterito Nena</h3>
+                <p>Enterito de algodón ideal para mantener al bebé abrigado y cómodo en cualquier estación del año.</p>
+                <p class="price">Precio: $6500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Enterito Nena', 6500, 'imagenes/enterito1.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/enterito2.jpg" alt="Enterito Varón">
+                <h3>Enterito Varón</h3>
+                <p>Enterito de algodón ideal para mantener al bebé abrigado y cómodo en cualquier estación del año.</p>
+                <p class="price">Precio: $6500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Enterito Varón', 6500, 'imagenes/enterito2.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/enterito3.jpg" alt="Enterito Largo">
+                <h3>Enterito Largo</h3>
+                <p>Enterito de algodón ideal para mantener al bebé abrigado y cómodo en cualquier estación del año.</p>
+                <p class="price">Precio: $6500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Enterito Largo', 6500, 'imagenes/enterito3.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/enterito4.jpg" alt="Enterito Lisos x 3">
+                <h3>Enterito Lisos x 3</h3>
+                <p>Enterito de algodón ideal para mantener al bebé abrigado y cómodo en cualquier estación del año.</p>
+                <p class="price">Precio: $6500</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Enterito Lisos x 3', 6500, 'imagenes/enterito4.jpg')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <div class="btn-volver-container">
+            <a href="index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
