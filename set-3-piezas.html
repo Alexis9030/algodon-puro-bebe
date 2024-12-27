@@ -8,44 +8,48 @@
 </head>
 <body>
 
-    
     <header>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
         <h1>Set de 3 Piezas</h1>
     </header>
 
-    
     <main>
         <section class="productos-destacados">
-            
             <div class="producto">
                 <img src="imagenes/set1.jpg" alt="Set de 3 Piezas">
-                <h3>Set de 3 Piezas</h3>
+                <h3>Set de 3 Piezas 1</h3>
                 <p>Conjunto suave y cómodo para el recién nacido. Incluye un body, un pantalón y una gorrita, hechos de 100% algodón natural.</p>
                 <p><strong>Precio:</strong> $7.800</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Set de 3 Piezas 1', 7800, 'imagenes/set1.jpg')">Comprar</button>
             </div>
 
-            
             <div class="producto">
                 <img src="imagenes/set2.jpg" alt="Set de 3 Piezas">
-                <h3>Set de 3 Piezas</h3>
+                <h3>Set de 3 Piezas 2</h3>
                 <p>Conjunto suave y cómodo para el recién nacido. Incluye un body, un pantalón y una gorrita, hechos de 100% algodón natural.</p>
                 <p><strong>Precio:</strong> $7.800</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Set de 3 Piezas 2', 7800, 'imagenes/set2.jpg')">Comprar</button>
             </div>
 
-            
             <div class="producto">
                 <img src="imagenes/set3.jpg" alt="Set de 3 Piezas">
-                <h3>Set de 3 Piezas</h3>
+                <h3>Set de 3 Piezas 3</h3>
                 <p>Conjunto suave y cómodo para el recién nacido. Incluye un body, un pantalón y una gorrita, hechos de 100% algodón natural.</p>
                 <p><strong>Precio:</strong> $7.800</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Set de 3 Piezas 3', 7800, 'imagenes/set3.jpg')">Comprar</button>
             </div>
 
-            
             <div class="producto">
                 <img src="imagenes/set4.jpg" alt="Set de 3 Piezas">
-                <h3>Set de 3 Piezas</h3>
+                <h3>Set de 3 Piezas 4</h3>
                 <p>Conjunto suave y cómodo para el recién nacido. Incluye un body, un pantalón y una gorrita, hechos de 100% algodón natural.</p>
                 <p><strong>Precio:</strong> $7.800</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Set de 3 Piezas 4', 7800, 'imagenes/set4.jpg')">Comprar</button>
             </div>
         </section>
 
@@ -53,5 +57,6 @@
         <a href="index.html" class="btn-volver">Volver al Inicio</a>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>

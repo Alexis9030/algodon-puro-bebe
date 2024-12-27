@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-        <header>
+    <header>
         <h1>Quiénes Somos</h1>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -29,11 +34,16 @@
             </p>
 
             <!-- Botón para volver al inicio -->
-            <a href="index.html">
-                <button class="btn-return">Volver al Inicio</button>
-            </a>
+            <div class="btn-volver-container">
+                <a href="index.html" class="btn-volver">Volver al Inicio</a>
+            </div>
         </section>
     </main>
+    
+    <footer>
+        <p>© 2024 Algodón Puro Bebé. Todos los derechos reservados.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

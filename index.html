@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    
     <header>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>        
         <h1>Algodón Puro Bebé</h1>
         <p>Ropa 100% de algodón, suave y natural para los más pequeños.</p>
     </header>
 
-    
     <div class="text-carousel">
         <div class="carousel-text">
             <p>🚚 ENVÍOS GRATIS EN COMPRAS MAYORES A $110.000</p>
@@ -23,7 +26,6 @@
         </div>
     </div>
 
-    
     <nav>
         <ul>
             <li><a href="quienes-somos.html">Quiénes Somos</a></li>
@@ -38,13 +40,11 @@
             </li>
             <li><a href="#ofertas">Ofertas</a></li>
             <li><a href="resenas.html">Reseñas</a></li>
-            <li><a href="#contacto">Contacto</a></li> 
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    
-    
+
     <main>
-        
         <section id="productos">
             <h2>Productos Destacados</h2>
             <div class="productos-lista">
@@ -53,49 +53,49 @@
                     <h4>Body + Short</h4>
                     <p>Talles 00 y 0, desde recién nacido hasta los 6 meses.</p>
                     <p class="price">$5.500</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button" data-producto="Body + Short" data-precio="5500" data-imagen="imagenes/short1.jpg">Comprar</button>
                 </div>
                 <div class="product-card">
                     <img src="imagenes/ranita1.jpg" alt="Ranitas de Algodón">
                     <h4>Ranitas</h4>
                     <p>Talles 00 al 2, desde recién nacido hasta el año y medio.</p>
                     <p class="price">$5.200</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button" data-producto="Ranitas" data-precio="5200" data-imagen="imagenes/ranita1.jpg">Comprar</button>
                 </div>
                 <div class="product-card">
                     <img src="imagenes/set1.jpg" alt="Ajuares de Algodón">
                     <h4>Ajuares</h4>
                     <p>Talles 00, 0 y 1, ideales para el primer mes del bebé.</p>
                     <p class="price">$7.500</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button" data-producto="Ajuares" data-precio="7500" data-imagen="imagenes/set1.jpg">Comprar</button>
                 </div>
                 <div class="product-card">
                     <img src="imagenes/manta1.jpg" alt="Mantas de Algodón">
                     <h4>Mantas</h4>
                     <p>Mantas suaves y abrigadas, perfectas para cualquier temporada.</p>
                     <p class="price">$15.800</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button" data-producto="Mantas" data-precio="15800" data-imagen="imagenes/manta1.jpg">Comprar</button>
                 </div>
-            </div>
+            </div>            
         </section>
 
-        
         <section id="ofertas">
             <h2>Oferta de la Semana</h2>
             <div class="ofertas-lista">
                 <div class="offer-card">
-                    <img src="imagenes/babita1.jpg" alt="Babitas estampadas">
+                    <img src="imagenes/babita1.jpg" alt="Babitas estampadas" class="imagen-oferta">
                     <h4>Babitas Estampadas</h4>
                     <p>Doble algodón, terminación borde con picot. Ideal para acompañar al bebé en cada momento.</p>
                     <p><strong>Antes: $1200 | Ahora: $1000</strong></p>
-                    <button class="buy-now-button">Comprar Ahora</button>
+                    <button class="buy-now-button" data-producto="Babitas Estampadas" data-precio="1000" data-imagen="imagenes/babita1.jpg">Comprar Ahora</button>
                     <div class="discount-tag">10% de Descuento</div>
                 </div>
             </div>
         </section>
-
         
-        <div class="reseñas">
+        
+
+        <section id="reseñas">
             <h2>Reseñas Destacadas</h2>
             <div class="reseñas-container">
                 <div class="reseña-card">
@@ -105,45 +105,38 @@
                     <p>"Los productos son hermosos y la tela es muy suave." - Juana G.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    
     <section style="background-color: #E0E0E0; padding: 40px 0;">
         <div style="text-align: center; padding: 20px;">
             <h3>¡Únete a la familia de Algodón Puro Bebé!</h3>
             <p>Queremos saber de ti. Regístrate para recibir noticias, novedades y promociones exclusivas.</p>
-            <form action="#" method="post" style="display: flex; flex-direction: column; align-items: center;">
-                <input type="text" placeholder="Nombre" style="padding: 10px; width: 250px; margin: 10px;"/>
-                <input type="email" placeholder="Correo Electrónico" style="padding: 10px; width: 250px; margin: 10px;"/>
-                <textarea placeholder="Mensaje" style="padding: 10px; width: 250px; margin: 10px;"></textarea>
+            <form id="registro-form" style="display: flex; flex-direction: column; align-items: center;">
+                <input id="nombre" type="text" placeholder="Nombre" style="padding: 10px; width: 250px; margin: 10px;" required />
+                <input id="email" type="email" placeholder="Correo Electrónico" style="padding: 10px; width: 250px; margin: 10px;" required />
+                <textarea id="mensaje" placeholder="Mensaje" style="padding: 10px; width: 250px; margin: 10px;" required></textarea>
                 <button type="submit" style="padding: 8px 16px; background-color: #B58B8B; color: white; border-radius: 5px; cursor: pointer;">Enviar</button>
             </form>
+            <p id="mensaje-confirmacion" style="margin-top: 20px; color: green; display: none;">¡Gracias por registrarte! Nos pondremos en contacto a la brevedad.</p>
         </div>
     </section>
 
-    <!-- Información de contacto -->
-    <footer id="contacto" style="background-color: #F0F0F0; padding: 40px 0; color: #333; font-family: 'Comic Sans MS', cursive, sans-serif;">
+    <section>
+        <div id="api-products" class="productos-lista">
+            <h2>Productos Sugeridos</h2>
+        </div>
+    </section>
+
+    <footer id="contacto" style="background-color: #F0F0F0; padding: 40px 0; color: #333;">
         <div style="text-align: center;">
-            <h2 style="color: #333;">Contacto</h2>
-            <p style="margin-bottom: 15px;">Para cualquier consulta o pedido especial, contáctanos:</p>
-            <div>
-                <p><strong>Teléfono:</strong> +54 11 5678 1234 (horario laboral)</p>
-                <p><strong>Email:</strong> info@algodonpurobebe.com</p>
-                <p><strong>Dirección:</strong> Calle S/N 123, Buenos Aires, Argentina (solo venta online)</p>
-            </div>
-            <div style="margin-top: 20px;">
-                <p><strong>Seguinos en redes sociales:</strong></p>
-                <a href="#" style="color: #B58B8B; text-decoration: none; margin-right: 10px;">Instagram</a> |
-                <a href="#" style="color: #B58B8B; text-decoration: none;">Facebook</a>
-            </div>
-            <div style="margin-top: 20px;">
-                <p><strong>Medios de pago:</strong> Visa, Mastercard, American Express, Mercado Pago</p>
-                <p><strong>Medios de envío:</strong> Andreani, Correo Argentino</p>
-            </div>
+            <h2>Contacto</h2>
+            <p>Teléfono: +54 11 5678 1234</p>
+            <p>Email: info@algodonpurobebe.com</p>
+            <p>Seguinos: Instagram | Facebook</p>
         </div>
     </footer>
-    
 
+    <script src="script.js"></script>
 </body>
 </html>

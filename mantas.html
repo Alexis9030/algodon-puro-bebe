@@ -8,48 +8,58 @@
 </head>
 <body>
 
-    
     <header>
+        <div id="carrito">
+            <a href="carrito.html">
+                <img src="imagenes/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="contador-carrito">0</span>
+            </a>
+        </div>
         <h1>Mantas</h1>
         <p>Mantas suaves y acogedoras para mantener a tu bebé cálido y seguro, hechas con algodón puro y materiales de alta calidad.</p>
     </header>
 
-    
     <main>
         <section class="productos-destacados">
             <div class="producto">
-                <img src="imagenes/manta1.jpg" alt="Manta">
-                <h3>Manta</h3>
+                <img src="imagenes/manta1.jpg" alt="Manta de algodón azul">
+                <h3>Manta Azul</h3>
                 <p>Manta de algodón suave, ideal para mantener a tu bebé abrigado en cualquier época del año.</p>
                 <p><strong>Precio:</strong> $15.000</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Manta Azul', 15000, 'imagenes/manta1.jpg')">Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/manta2.jpg" alt="Manta">
-                <h3>Manta</h3>
+                <img src="imagenes/manta2.jpg" alt="Manta de algodón beige">
+                <h3>Manta Beige</h3>
                 <p>Manta de algodón suave, ideal para mantener a tu bebé abrigado en cualquier época del año.</p>
                 <p><strong>Precio:</strong> $15.000</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Manta Beige', 15000, 'imagenes/manta2.jpg')">Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/manta3.jpg" alt="Manta">
-                <h3>Manta</h3>
+                <img src="imagenes/manta3.jpg" alt="Manta de algodón gris">
+                <h3>Manta Gris</h3>
                 <p>Manta de algodón suave, ideal para mantener a tu bebé abrigado en cualquier época del año.</p>
                 <p><strong>Precio:</strong> $15.000</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Manta Gris', 15000, 'imagenes/manta3.jpg')">Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/manta4.jpg" alt="Manta">
-                <h3>Manta</h3>
+                <img src="imagenes/manta4.jpg" alt="Manta de algodón rosa">
+                <h3>Manta Rosa</h3>
                 <p>Manta de algodón suave, ideal para mantener a tu bebé abrigado en cualquier época del año.</p>
                 <p><strong>Precio:</strong> $15.000</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Manta Rosa', 15000, 'imagenes/manta4.jpg')">Comprar</button>
             </div>
         </section>
 
         <!-- Botón para volver al inicio -->
-        <a href="index.html" class="btn-volver">Volver al Inicio</a>
+        <div class="btn-volver-container">
+            <a href="index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
     </main>
 
+    <footer>
+        <p>&copy; 2024 Algodón Puro Bebé - Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

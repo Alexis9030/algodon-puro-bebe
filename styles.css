@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('imagenes/fondo1.jpeg'); /* Ruta relativa */
+    background-image: url('imagenes/fondo1.jpeg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -19,7 +19,6 @@ header {
     margin-bottom: 20px;
     background-blend-mode: overlay;
 }
-
 
 nav ul {
     display: flex;
@@ -63,7 +62,6 @@ section {
     border-radius: 8px;
 }
 
-
 .reseñas {
     text-align: center;
     margin: 40px 0;
@@ -91,7 +89,6 @@ section {
     color: #333;
     margin: 0;
 }
-
 
 form {
     display: flex;
@@ -146,7 +143,6 @@ footer a:hover {
 }
 
 
-
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .reseñas-lista {
@@ -157,7 +153,6 @@ footer a:hover {
         flex-direction: column;
     }
 }
-
 
 button {
     background-color: #4A90E2;
@@ -175,7 +170,6 @@ button:hover {
     background-color: #357ABD;
     transition: background-color 0.3s;
 }
-
 
 nav ul {
     position: relative;
@@ -197,7 +191,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 .submenu {
     position: absolute;
@@ -226,23 +219,19 @@ nav ul li a {
     text-decoration: underline;
 }
 
+nav ul li:hover .submenu {
+    display: block;
+}
+
 
 nav ul li:hover .submenu {
     display: block;
 }
 
 
-
 nav ul li:hover .submenu {
     display: block;
 }
-
-
-
-nav ul li:hover .submenu {
-    display: block;
-}
-
 
 .text-carousel {
     background-color: #f0f0f0; 
@@ -258,7 +247,6 @@ nav ul li:hover .submenu {
     overflow: hidden;
 }
 
-
 .carousel-text p {
     position: absolute;
     width: 100%;
@@ -268,7 +256,6 @@ nav ul li:hover .submenu {
     animation: fadeCycle 9s infinite;
 }
 
-/* Animación para el desvanecimiento cíclico */
 @keyframes fadeCycle {
     0%, 33%, 100% { opacity: 0; }
     11%, 22% { opacity: 1; }
@@ -285,7 +272,6 @@ nav ul li:hover .submenu {
 .carousel-text p:nth-child(3) {
     animation-delay: 6s;
 }
-
 
 
 .productos-lista {
@@ -375,7 +361,6 @@ nav ul li:hover .submenu {
     background-color: #8F6B6B;
 }
 
-/* Estilo para la sección Quiénes Somos */
 .about-section {
     background-color: #f2f2f2; 
     padding: 20px 40px;
@@ -459,7 +444,6 @@ nav ul li:hover .submenu {
     text-align: center;
 }
 
-
 .producto img {
     width: 100%; 
     height: auto;
@@ -573,7 +557,6 @@ nav ul li:hover .submenu {
 .btn-volver:hover {
     background-color: #b38585; 
 }
-
 
 .producto img {
     width: 100%;
@@ -581,7 +564,6 @@ nav ul li:hover .submenu {
     height: 200px; 
     object-fit: cover; 
 }
-
 
 .producto img {
     width: 100%;
@@ -696,7 +678,6 @@ nav ul li:hover .submenu {
     font-size: 1em;
 }
 
-
 .btn-volver {
     display: inline-block;
     margin: 20px auto;
@@ -710,11 +691,9 @@ nav ul li:hover .submenu {
     text-align: center;
 }
 
-
 main {
     text-align: center;
 }
-
 
 .productos-destacados {
     display: flex;
@@ -735,4 +714,94 @@ main {
 .producto img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+#carrito {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#carrito img {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.carrito-producto img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+#contador-carrito {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.carrito-producto .btn-cantidad,
+.carrito-producto .btn-eliminar {
+    padding: 8px 12px; 
+    font-size: 0.9em; 
+}
+
+.carrito-producto .btn-eliminar {
+    background-color: #d9534f; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-producto .btn-eliminar:hover {
+    background-color: #c9302c; 
+}
+
+.carrito-producto {
+    margin-bottom: 20px; 
+}
+
+.btn-eliminar {
+    margin-top: 5px; 
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4A90E2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.imagen-oferta {
+    max-width: 300px; 
+    max-height: 300px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
 }
